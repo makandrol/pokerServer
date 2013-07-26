@@ -46,6 +46,7 @@ public class SocketThread implements Runnable {
             if (playerName.equals("exit"))
                 return;
 
+            //with first commit
             out = new PrintWriter(playerSocket.getOutputStream());
             out.println("Server: hello, " + playerName);
             out.flush();
